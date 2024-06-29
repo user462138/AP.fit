@@ -1,4 +1,3 @@
-"""
 # AP.fit
 
 AP.fit is a comprehensive web application designed to help users with their fitness journey. The platform provides resources for strength training, cardio training, yoga, nutrition guidance, and a calorie calculator.
@@ -39,4 +38,3 @@ Contributions are welcome! Please fork the repository and create a pull request 
 ## License
 
 This project is licensed under the MIT License.
-"""
