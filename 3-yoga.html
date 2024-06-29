@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoga</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="/js/form.js" defer></script>
+    <script src="/js/menu.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon-32x32.png">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="/js/main.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <a class="logo" href="index.html"
+        ><img src="assets/images/logo02.png" alt="logo" width="150" height="75"
+      /></a>
+      <ul id="navLinks">
+        <i id="fa-fa-times" class="fa fa-times" onclick="hideMenu()"></i>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="hobby.html">Hobby</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <i class="fa fa-cart-plus" id="fa-fa-cart-plus"></i>
+      </ul>
+      <i id="fa-fa-bars" class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <header class="header-hobby">
+      <div class="text-box">
+        <h1>Fitnessen</h1>
+      </div>
+    </header>
+    <main class="main">
+      <div class="row">
+        <div class="onderdeel-col-left">
+          <h1>Yoga</h1>
+          <br />
+          <p>
+            Yoga is een oude praktijk die gericht is op het verenigen van
+            lichaam, geest en ziel. Het omvat verschillende houdingen,
+            ademhalingstechnieken en meditatie om de fysieke en mentale
+            gezondheid te verbeteren. Yoga is een vorm van lichaamsbeweging die
+            zich richt op het versterken van de geest en het lichaam. <br />
+            <br />
+            Het beoefenen van yoga kan helpen bij het verbeteren van de
+            flexibiliteit, het verminderen van stress en het verbeteren van de
+            balans. Het kan ook helpen bij het verminderen van rugpijn, het
+            versterken van de spieren en het verbeteren van de bloedcirculatie.
+            <br />
+            <br />
+            Het is belangrijk om een gekwalificeerde yoga-instructeur te vinden
+            en een geschikt trainingsprogramma te volgen om het meeste uit yoga
+            te halen en blessures te voorkomen. Er zijn veel verschillende
+            soorten yoga, dus er is er altijd een die past bij jouw behoeften en
+            fitnessniveau.
+            <br />
+          </p>
+          <br />
+        </div>
+        <div class="onderdeel-col-right">
+          <img src="assets/images/Yoga-1.webp" />
+        </div>
+      </div>
+      <aside class="onderdeel-contact">
+        <h1>Workouts en begeleiding die aansluiten op jouw niveau</h1>
+        <a href="contact.html" class="hero-btn-main">CONTACTEER ONS</a>
+      </aside>
+      <div class="row">
+        <div class="onderdeel-col-left">
+          <img src="assets/images/Yoga-2.png" />
+        </div>
+        <div class="onderdeel-col-right">
+          <h3>Voordelen van Yoga</h3>
+          <br /><br />
+          <div>
+            <ol>
+              <li>
+                <span>01</span>
+                <p>
+                  Door yoga te beoefenen, leer je meer over je lichaam en voel
+                  je je meer verbonden met jezelf.
+                </p>
+              </li>
+
+              <li>
+                <span>02</span>
+                <p>
+                  Yoga kan bijdragen aan het verminderen van spanning en stress,
+                  waardoor je beter kunt ontspannen.
+                </p>
+              </li>
+
+              <li>
+                <span>03</span>
+                <p>
+                  Door regelmatig yoga te doen, kun je je lichaam sterker maken
+                  en meer controle krijgen over je fysieke capaciteiten.
+                </p>
+              </li>
+
+              <li>
+                <span>04</span>
+                <p>
+                  Yoga kan je mentale helderheid verbeteren en je helpen om je
+                  gedachten te ordenen.
+                </p>
+              </li>
+
+              <li>
+                <span>05</span>
+                <p>
+                  Na een yoga-sessie voel je je vaak vrolijker en gelukkiger,
+                  wat een positief effect kan hebben op je humeur.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <section class="row">
+        <article class="comment-box-left">
+          <h3>Leave a comment</h3>
+          <form action="#" class="contactform" id="contactform">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="email" name="email" placeholder="Email" />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message"
+              rows="5"
+            ></textarea>
+            <button
+              type="submit"
+              value="Send"
+              class="hero-btn"
+              onclick="myFunction()"
+            >
+              Submit Comment
+            </button>
+          </form>
+        </article>
+        <article class="comment-box-right">
+          <h3>VIND JE ONS CONTENT LEUK</h3>
+          <p>! Give us a LIKE !</p>
+          <button class="btn" id="green">
+            <i
+              id="fa-fa-Contact2"
+              class="fa fa-thumbs-up fa-lg"
+              aria-hidden="true"
+            ></i>
+          </button>
+          <button class="btn" id="red">
+            <i
+              id="fa-fa-Contact2"
+              class="fa fa-thumbs-down fa-lg"
+              aria-hidden="true"
+            ></i>
+          </button>
+          <h3>CONTACT INFO</h3>
+          <p>AP . FIT</p>
+          <p>
+            Email : <a href="mailto:info@AP.fit"> info@AP.fit.be</a><br />Phone
+            +32 032 / 20 55 00
+          </p>
+          <ul class="socials-Contact">
+            <li>
+              <a href="https://www.youtube.com" target="_blank"
+                ><i class="fa fa-youtube-play" id="fa-fa-Contact2"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fa fa-instagram" id="fa-fa-Contact2"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="fa fa-facebook-f" id="fa-fa-Contact2"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" target="_blank"
+                ><i class="fa fa-twitter" id="fa-fa-Contact2"></i
+              ></a>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <div id="Comment-box-onder" style="display: none;">
+        <ul id="errorlist"></ul>
+        <p id="success"></p>
+      </div>
+      <div class="cart">
+        <h2 class="cart-title">Your cart (<span id="counter-example">0</span>)</h2>
+        <section class="cart-content" id="card-content">
+          <!--- TEST BOX -->
+          <!-- <article class="cart-box">
+            <img src="assets/images/shop1.webp" alt="" class="cart-img" />
+            <ul class="detail-box">
+              <p class="cart-product-title">ADAPT ANIMAL SEAMLESS BRA</p>
+              <p class="cart-price">€42</p>
+              <input type="number" value="1" class="cart-quantity"></input>
+            </ul>
+            <i class="fa fa-trash-o cart-remove"></i>
+          </article> -->
+        </section>
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+        <button type="button" class="btn-buy">Buy Now</button>
+        <i class="fa fa-close" id="cart-close"></i>
+      </div>
+    </main>
+    <footer>
+      <h4>&copy; 2023 AP.fit - privacy policy - cookies</h4>
+      <p>*-----s145780@.ap.be-----Yazan Dukhan-----G_1PRO_H_D1-----*</p>
+      <ul class="socials">
+        <li>
+          <a href="https://www.youtube.com" target="_blank"
+            ><img src="./assets/images/youtube.png" width="30" height="30"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img src="./assets/images/instagram.png" width="30" height="30"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img src="./assets/images/facebook.png" width="30" height="30"
+          /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/" target="_blank"
+            ><img src="./assets/images/twitter.png" width="30" height="30"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

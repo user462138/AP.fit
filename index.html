@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="/js/form.js" defer></script>
+    <script src="/js/menu.js" defer></script>
+    <!-- <script src="/js/shop.js" defer></script> -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="/js/main.js" defer></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/images/favicon-32x32.png"
+    />
+  </head>
+  <body>
+    <nav>
+      <a class="logo" href="index.html"
+        ><img src="assets/images/logo02.png" alt="logo" width="150" height="75"
+      /></a>
+      <ul id="navLinks">
+        <i id="fa-fa-times" class="fa fa-times" onclick="hideMenu()"></i>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="hobby.html">Hobby</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <section class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </section>
+        <i class="fa fa-cart-plus" id="fa-fa-cart-plus"></i>
+      </ul>
+      <i id="fa-fa-bars" class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <header>
+      <section class="text-box">
+        <h1>Fitnessen</h1>
+        <p>by Yazan.DU</p>
+        <a href="hobby.html" class="hero-btn">Meer weten</a>
+      </section>
+    </header>
+    <main class="main">
+      <section class="row">
+        <article class="main-col">
+          <h1>Work out | Fitnessen</h1>
+          <p>
+            Fitnessen is een geweldige manier om in vorm te blijven en je
+            fysieke gezondheid te verbeteren. Afhankelijk van jouw voorkeuren en
+            doelen kun je verschillende soorten fitness. <br />
+            Fitness kan een integraal onderdeel zijn van een gezonde
+            levensstijl. Door regelmatig te sporten en goed te eten, kunt u uw
+            fysieke en mentale gezondheid verbeteren en een lang en gezond leven
+            leiden. Fitness kan ook helpen bij het verbeteren van de
+            slaapkwaliteit en het verminderen van slapeloosheid. <br />
+            <br />
+            Een belangrijk onderdeel van fitness is het opstellen van een plan
+            en het stellen van realistische doelen. Het kan ook nuttig zijn om
+            een trainer te raadplegen om een gepersonaliseerd trainingsprogramma
+            te ontwikkelen en om ervoor te zorgen dat je de juiste vorm en
+            techniek gebruikt tijdens het uitvoeren van oefeningen.
+          </p>
+          <a href="hobby.html" class="hero-btn-main">Meer weten</a>
+        </article>
+        <article class="main-col">
+          <img src="assets/images/foto-main-1.jpg" />
+          <figcaption>i-fitness.be</figcaption>
+        </article>
+      </section>
+      <section class="row">
+        <article class="main-col">
+          <img src="assets/images/bodybuilder-fotomontage.jpg" />
+          <figcaption>i-fitness.be</figcaption>
+        </article>
+        <article class="main-col">
+          <h1>Waarom Fitnessen | Hobby</h1>
+          <p>
+            Fitness is een activiteit die gericht is op het verbeteren van de
+            fysieke conditie en het algemene welzijn. Het omvat verschillende
+            aspecten, zoals krachttraining, cardiovasculaire oefeningen,
+            flexibiliteitstraining en het handhaven van een gezonde
+            levensstijl.<br /><br>
+            Fitness kan een integraal onderdeel zijn van een gezonde
+            levensstijl. Door regelmatig te sporten en goed te eten, kunt u uw
+            fysieke en mentale gezondheid verbeteren en een lang en gezond leven
+            leiden. Fitness kan ook helpen bij het verbeteren van de
+            slaapkwaliteit en het verminderen van slapeloosheid. <br /> <br> Een
+            belangrijk onderdeel van fitness is het opstellen van een plan en
+            het stellen van realistische doelen. Het kan ook nuttig zijn om een
+            trainer te raadplegen om een gepersonaliseerd trainingsprogramma te
+            ontwikkelen en om ervoor te zorgen dat je de juiste vorm en techniek
+            gebruikt tijdens het uitvoeren van oefeningen.
+          </p>
+          <a href="hobby.html" class="hero-btn-main">Meer weten</a>
+        </article>
+      </section>
+      <div class="cart">
+        <h2 class="cart-title">Your cart (<span id="counter-example">0</span>)</h2>
+        <section class="cart-content" id="card-content">
+          <!--- TEST BOX -->
+          <!-- <article class="cart-box">
+            <img src="assets/images/shop1.webp" alt="" class="cart-img" />
+            <ul class="detail-box">
+              <p class="cart-product-title">ADAPT ANIMAL SEAMLESS BRA</p>
+              <p class="cart-price">€42</p>
+              <input type="number" value="1" class="cart-quantity"></input>
+            </ul>
+            <i class="fa fa-trash-o cart-remove"></i>
+          </article> -->
+        </section>
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+        <button type="button" class="btn-buy">Buy Now</button>
+        <i class="fa fa-close" id="cart-close"></i>
+      </div>
+    </main>
+    <aside class="home-contact">
+      <h1>Workouts en begeleiding die aansluiten op jouw niveau</h1>
+      <a href="contact.html" class="hero-btn-main">CONTACTEER ONS</a>
+    </aside>
+    <footer>
+      <h4>&copy; 2023 AP.fit - privacy policy - cookies</h4>
+      <p>*-----s145780@.ap.be-----Yazan Dukhan-----G_1PRO_H_D1-----*</p>
+      <ul class="socials">
+        <li>
+          <a href="https://www.youtube.com" target="_blank"
+            ><img src="./assets/images/youtube.png" width="30" height="30"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img src="./assets/images/instagram.png" width="30" height="30"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img src="./assets/images/facebook.png" width="30" height="30"
+          /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/" target="_blank"
+            ><img src="./assets/images/twitter.png" width="30" height="30"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

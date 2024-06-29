@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script src="/js/form.js" defer></script>
+  <script src="/js/menu.js" defer></script>
+  <script src="/js/mapScript.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon-32x32.png">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <script src="/js/main.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <a class="logo" href="index.html"
+        ><img src="assets/images/logo02.png" alt="logo" width="150" height="75"
+      /></a>
+      <ul id="navLinks">
+        <i id="fa-fa-times" class="fa fa-times" onclick="hideMenu()"></i>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="hobby.html">Hobby</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <i class="fa fa-cart-plus" id="fa-fa-cart-plus"></i>
+      </ul>
+      <i id="fa-fa-bars" class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <header class="header-hobby">
+      <div class="text-box">
+        <h1>Contact Us</h1>
+      </div>
+    </header>
+    <main class="main-hobby">
+      <section class="contact-us">
+        <article class="row-hobby">
+          <div class="contact-col">
+            <div>
+              <i id="fa-fa-Contact" class="fa fa-home" aria-hidden="true"></i>
+              <span>
+                <h5>Noorderplaats 2, 2000 Antwerpen</h5>
+                <p>Antwerp, Belgium</p>
+              </span>
+            </div>
+            <div>
+              <i id="fa-fa-Contact" class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                <h5>+32 03 220 55 00</h5>
+                <p>Van maandag tot vrijdag. Zaterdag, 09:00 tot 17:00.</p>
+              </span>
+            </div>
+            <div>
+              <i
+                id="fa-fa-Contact"
+                class="fa fa-envelope"
+                aria-hidden="true"
+              ></i>
+              <span>
+                <h5>info@AP.fit</h5>
+                <p>stuur ons uw vraag</p>
+              </span>
+            </div>
+          </div>
+          <div class="contact-col">
+            <form action="#" method="post" class="contactform">
+              <h5>
+                Vul het registratieformulier in. Velden met een * zijn
+                verplicht.
+              </h5>
+              <input
+                type="text"
+                name="name"
+                placeholder="Vul uw naam in*"
+                required
+              /><br />
+              <input
+                type="email"
+                name="email"
+                placeholder="Vul uw e-mailadres in*"
+                required
+              /><br />
+              <input
+                type="text"
+                name="text"
+                placeholder="Vul je onderwerp in*"
+                required
+              /><br />
+              <select
+                name="brand"
+                id="brand"
+                placeholder="Vul je onderwerp in*"
+                required
+              >
+                <option value="AP.fit">AP.fit</option>
+                <option value="web developer">Web Developer</option>
+              </select>
+              <textarea
+                name="bericht"
+                rows="8"
+                placeholder="Vul je bericht in*"
+              ></textarea>
+              <button type="submit" class="hero-btn-main">Stuur</button>
+            </form>
+          </div>
+        </article>
+      </section>
+      <div id="map"></div>
+      <div class="cart">
+        <h2 class="cart-title">Your cart (<span id="counter-example">0</span>)</h2>
+        <section class="cart-content" id="card-content">
+          <!--- TEST BOX -->
+          <!-- <article class="cart-box">
+            <img src="assets/images/shop1.webp" alt="" class="cart-img" />
+            <ul class="detail-box">
+              <p class="cart-product-title">ADAPT ANIMAL SEAMLESS BRA</p>
+              <p class="cart-price">€42</p>
+              <input type="number" value="1" class="cart-quantity"></input>
+            </ul>
+            <i class="fa fa-trash-o cart-remove"></i>
+          </article> -->
+        </section>
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+        <button type="button" class="btn-buy">Buy Now</button>
+        <i class="fa fa-close" id="cart-close"></i>
+      </div>
+    </main>
+    <aside class="home-contact">
+      <h1>
+        Op zoek naar de nieuwste fitnessapparatuur,<br />
+        kleding en accessoires?
+      </h1>
+      <a href="/shop.html" class="hero-btn-main">SHOP BIJ AP. f i t</a>
+    </aside>
+    <footer>
+      <h4>&copy; 2023 AP.fit - privacy policy - cookies</h4>
+      <p>*-----s145780@.ap.be-----Yazan Dukhan-----G_1PRO_H_D1-----*</p>
+      <ul class="socials">
+        <li>
+          <a href="https://www.youtube.com" target="_blank"
+            ><img src="./assets/images/youtube.png" width="30" height="30"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img src="./assets/images/instagram.png" width="30" height="30"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img src="./assets/images/facebook.png" width="30" height="30"
+          /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/" target="_blank"
+            ><img src="./assets/images/twitter.png" width="30" height="30"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
